@@ -1,0 +1,25 @@
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    display: flex;
+}
+
+.nav-bar-element {
+    float: left;
+    flex-basis: 50%;
+}
+
+.nav-bar-element :hover {
+    background-color: #DEDEDE;
+}
+
+.link {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
