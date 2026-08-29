@@ -1,0 +1,17 @@
+name: Test workflow
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: Run and test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build --configuration production
